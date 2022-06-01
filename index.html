@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Tintillo</title>
 </head>
 
@@ -54,15 +56,15 @@
     <!-- Inicio Main -->
 
     <Section class="carrousel-and-wpp">
-        <div class="carrousel"><img src="Images/img-carrousel.jpg" alt="Carrousel" width="92%"></div>
-        <div class="linkawpp"><img src="Images/link-wpp2.jpg" alt="link-wpp" width="100%"></div>
+        <div class="carrousel"><img src="Images/img-carrousel.jpg"  alt="Carrousel" width="92%"></div>
+        <div><img class="linkawpp animate__bounce" src="Images/link-wpp2.jpg" alt="link-wpp" width="100%"></div>
     </Section>
 
     <div class="main">
         <div class="quienes-somos">
-            <h1>Tintillo</h1>
+            <h1 data-aos="fade-left" >Tintillo</h1>
 
-            <p class="parrafo">Un 24 de noviembre, Día del Vino Argentino, nacimos como un proyecto destinado a
+            <p data-aos="fade-left" class="parrafo">Un 24 de noviembre, Día del Vino Argentino, nacimos como un proyecto destinado a
                 seleccionar
                 <br>
                 los mejores vinos de cada región del país y ofrecerlos a nuestros clientes para que recorran y descubran
@@ -73,12 +75,15 @@
                 Bienvenidos a este viaje de colores, sabores y aromas.
                 <br>
                 <br>
-                <p class="bienvenidos"><em>Bienvenidos a Tintillo </em>🍷</p>
+                <p data-aos="fade-left" class="bienvenidos"><em>Bienvenidos a Tintillo </em>🍷</p>
             </p>
             </p>
         </div>
         <div class="imgvinoteca">
-            <img src="Images/vinoteca4.jpg" alt="img-vinoteca" width="100%">
+            <img data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" 
+            src="Images/vinoteca4.jpg" alt="img-vinoteca" width="100%">
         </div>
 
         <h1 class="titulo-ofertas">OFERTAS IMPERDIBLES</h1>
@@ -96,7 +101,7 @@
     <!-- Inicio footer ---------------------------------------------------------------->
 
     <footer>
-        <div class="seguinos">
+        <div class="seguinos" data-aos="fade-right">
             <p>SEGUINOS EN LA REDES SOCIALES Y NO TE PIERDAS LAS MEJORES PROMOS</p>
             <div class="redes"><img class="logos-redes" src="Images/Logo-Facebook.png"  alt="link-facebook">
                 <img class="logos-redes" src="Images/Logo-instagram.png" alt="link-instagram">
@@ -134,6 +139,10 @@
     <!-- Fin footer ------------------------------------------------------------------->
 
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
