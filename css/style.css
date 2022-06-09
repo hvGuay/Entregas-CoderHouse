@@ -1,0 +1,44 @@
+.barra {
+  display: flex;
+  z-index: +1;
+  position: sticky;
+  top: 0%; }
+
+.fb:hover, .ig:hover, .wpp:hover {
+  transform: scale(1.2); }
+
+.fb, .ig, .wpp {
+  transition: all 0.5s ease-in-out; }
+
+.tituloOfertas, .redes {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black; }
+
+.tarjeta:hover {
+  transform: scale(1.5); }
+
+.tarjeta {
+  transition: all 0.5s ease-in-out; }
+
+.tarjeta-producto:hover {
+  transform: scale(1.1); }
+
+.tarjeta-producto {
+  transition: all 0.3s ease-in-out; }
+
+.pie {
+  border-top: 1px solid black;
+  padding-top: 5%; }
+
+.tintos:hover, .rosados:hover, .blancos:hover, .espumantes:hover {
+  transform: scale(0.9);
+  opacity: 80%; }
+
+.tintos, .rosados, .blancos, .espumantes {
+  transition: all 0.3s ease-in-out; }
+
+footer .pie {
+  border-top: #c09d9d;
+  padding-top: 5%; }
+  footer .pie h4 {
+    color: darkgoldenrod; }
