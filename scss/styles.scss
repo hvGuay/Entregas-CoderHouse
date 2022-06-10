@@ -1,3 +1,9 @@
+
+// variables
+$color-principal: rgb(116, 40, 64);
+$color-secundario: rgb(100, 7, 27);
+
+
 .barra {
     display: flex;
     z-index: +1;
@@ -35,11 +41,6 @@
     transition: all 0.3s ease-in-out;
 }
 
-.pie {
-    border-top: 1px solid black;
-    padding-top: 5%;
-}
-
 .tintos:hover,.rosados:hover,.blancos:hover,.espumantes:hover {
     transform: scale(0.9);   
     opacity: 80%;
@@ -49,12 +50,22 @@
     transition: all 0.3s ease-in-out;
 }
 
+// Ejemplo de Nesting y aplicación de variables
+
 footer{
     .pie{
-        border-top: rgb(192, 157, 157);
-    padding-top: 5%;
     h4{
-        color: darkgoldenrod;
+        color: $color-secundario ;
+    }
+    li{
+        color: $color-secundario;
     }
     }
+}
+
+body{          
+    h1{
+        color: $color-principal ;
+    }
+
 }

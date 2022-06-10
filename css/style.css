@@ -26,10 +26,6 @@
 .tarjeta-producto {
   transition: all 0.3s ease-in-out; }
 
-.pie {
-  border-top: 1px solid black;
-  padding-top: 5%; }
-
 .tintos:hover, .rosados:hover, .blancos:hover, .espumantes:hover {
   transform: scale(0.9);
   opacity: 80%; }
@@ -37,8 +33,11 @@
 .tintos, .rosados, .blancos, .espumantes {
   transition: all 0.3s ease-in-out; }
 
-footer .pie {
-  border-top: #c09d9d;
-  padding-top: 5%; }
-  footer .pie h4 {
-    color: darkgoldenrod; }
+footer .pie h4 {
+  color: #64071b; }
+
+footer .pie li {
+  color: #64071b; }
+
+body h1 {
+  color: #742840; }
