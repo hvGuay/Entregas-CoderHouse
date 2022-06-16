@@ -1,0 +1,28 @@
+
+.tarjeta:hover {
+    transform: scale(1.5);
+}
+
+.tarjeta {
+    transition: all 0.5s ease-in-out;
+}
+
+
+.tarjeta-producto {
+    transition: all 0.3s ease-in-out;
+}
+
+.tintos,.rosados,.blancos,.espumantes {
+    transition: all 0.3s ease-in-out;
+}
+
+// aplicación de mixins ! //
+
+.tarjeta-producto:hover {
+    @include transformaciones(scale(1.1),85%)
+}
+
+.tintos:hover,.rosados:hover,.blancos:hover,.espumantes:hover {
+    @include transformaciones(scale(0.9),80%)
+
+}

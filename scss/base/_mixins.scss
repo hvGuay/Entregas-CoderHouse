@@ -1,0 +1,10 @@
+// mixins!! //
+
+@mixin transformaciones($tipo, $transparencia) {
+    transform: $tipo;
+    opacity: $transparencia;    
+}
+
+
+
+    

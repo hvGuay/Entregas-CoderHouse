@@ -1,8 +1,11 @@
 
 // variables
-$color-principal: rgb(116, 40, 64);
-$color-secundario: rgb(100, 7, 27);
-
+$color-principal: #b9a54b;
+$color-secundario: #bdb560;
+// Partials
+@import 'scss/components/productos';
+@import 'scss/components/footer';
+@import 'scss/base/extends';
 
 .barra {
     display: flex;
@@ -12,59 +15,13 @@ $color-secundario: rgb(100, 7, 27);
     }
 
 
-.fb:hover, .ig:hover, .wpp:hover {
-    transform: scale(1.2);
-}
-
-.fb, .ig, .wpp {
-    transition: all 0.5s ease-in-out;
-    }
-
-.tituloOfertas, .redes {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-}
-
-.tarjeta:hover {
-    transform: scale(1.5);
-}
-
-.tarjeta {
-    transition: all 0.5s ease-in-out;
-}
-
-.tarjeta-producto:hover {
-    transform: scale(1.1);
-}
-
-.tarjeta-producto {
-    transition: all 0.3s ease-in-out;
-}
-
-.tintos:hover,.rosados:hover,.blancos:hover,.espumantes:hover {
-    transform: scale(0.9);   
-    opacity: 80%;
-}
-
-.tintos,.rosados,.blancos,.espumantes {
-    transition: all 0.3s ease-in-out;
-}
-
-// Ejemplo de Nesting y aplicación de variables
-
-footer{
-    .pie{
-    h4{
-        color: $color-secundario ;
-    }
-    li{
-        color: $color-secundario;
-    }
-    }
+//Ejemplo de extend//
+.tituloOfertas, .seguinos, .vinos {
+   @extend %lineas_divisorias
 }
 
 body{          
-    h1{
+    h1, h5 {
         color: $color-principal ;
     }
 

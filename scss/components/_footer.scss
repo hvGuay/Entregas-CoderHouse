@@ -1,0 +1,32 @@
+
+
+// Ejemplo de Nesting y aplicación de variables
+
+
+.fb, .ig, .wpp {
+    transition: all 0.5s ease-in-out;
+    }
+
+    .fb:hover, .ig:hover, .wpp:hover {
+@include transformaciones (scale(1.4),70%)
+    }
+
+footer{
+    li {
+        list-style: none;}
+
+    .pie{
+
+    h4 {
+        color: rgb(77, 77, 77);}
+    
+    li{
+        color: $color-secundario;}
+        }
+}
+
+
+.linea-redes {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgb(168, 168, 168);
+}

@@ -1,0 +1,1 @@
+Para conseguir mejorar el SEO y accesibilidad, agregué los "Alts" de las imágenes utilizadas en la web, además cambié el formato de la imágenes, que originalmente eran .png y .jpg por .svg. Además agregué meta tags en el head de los htmls
