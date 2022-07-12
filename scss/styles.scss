@@ -1,28 +1,99 @@
 
+
 // variables
 $color-principal: #b9a54b;
 $color-secundario: #bdb560;
+
 // Partials
 @import 'scss/components/productos';
 @import 'scss/components/footer';
 @import 'scss/base/extends';
+@import 'scss/base/mixins';
 
 .barra {
     display: flex;
     z-index: +1;
     position: sticky;
     top: 0%;
-    }
-
-
-//Ejemplo de extend//
-.tituloOfertas, .seguinos, .vinos {
-   @extend %lineas_divisorias
 }
 
-body{          
-    h1, h5 {
-        color: $color-principal ;
+//Ejemplo de extend//
+
+.tituloOfertas,
+.seguinos,
+.vinos {
+    @extend %lineas_divisorias
+}
+
+body {
+
+    h1,
+    h5 {
+        color: $color-principal;
     }
 
+}
+
+
+.titulos_secundarios {
+    color: darkgrey;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo_descripcion {
+    border-top: solid 1px #a8a8a8;
+    font-weight: 500;
+    color: #b9a54b;
+    font-size: 2rem;
+    padding-top: 2rem;
+
+}
+
+.precio {
+    color: #4d4d4d;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.subtitulo_descripcion {
+    text-decoration: underline;
+    font-size: 1.3rem;
+    padding-top: 2rem;
+    color: #000000;
+}
+
+.boton_comprar {
+    font-weight: 500;
+    text-decoration: none;
+    color: #000000;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    background-color: #dfd1a4;
+    transition: all 1s ease-in-out;
+}
+
+.boton_comprar:hover {
+    color: #ffffff;
+    padding: 0.5rem 6rem;
+}
+
+.cuadro_descripcion {
+    padding-bottom: 2rem;
+    border-bottom: solid 1px #a8a8a8;
+
+}
+
+.seccion_navbar {
+    text-decoration: none;
+    color: #000000;
+}
+
+.icono {
+    width:1.5rem;
+    height: 1.5rem;
+}
+
+.imgenvios {
+    height: auto;
 }
